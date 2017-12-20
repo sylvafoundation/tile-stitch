@@ -6,8 +6,8 @@
 #include <curl/curl.h>
 #include <jpeglib.h>
 #include <png.h>
-#include <geotiffio.h>
-#include <xtiffio.h>
+#include <geotiff/geotiffio.h>
+#include <geotiff/xtiffio.h>
 
 void usage(char **argv) {
 	fprintf(stderr, "Usage: %s [-o outfile] [-f png|geotiff] minlat minlon maxlat maxlon zoom http://whatever/{z}/{x}/{y}.png ...\n", argv[0]);
